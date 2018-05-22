@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Noor Jahan</string>
+    <!--<string name="title_activity_main">Noor Jahan</string>-->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Noor Jahan</string>
+    <string name="nav_header_subtitle">hajvery.whiterose@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="num1"><u>1.NAME AND ADDRESS</u></string>
+    <string name="number">+921234567890</string>
+</resources>

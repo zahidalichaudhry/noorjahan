@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/wood"
+    tools:context="com.itpvt.noorjahan.Activities.Check_Out"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/action_bar">
+
+        </include>
+
+        <LinearLayout
+            android:id="@+id/place"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:padding="2dp"-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:orientation="horizontal">-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:text="Grand Total:"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:padding="2dp"-->
+            <!--android:textSize="22sp" />-->
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="@color/jumbo"-->
+            <!--android:padding="2dp"-->
+            <!--android:textSize="18sp"-->
+            <!--android:layout_marginLeft="5dp" />-->
+            <!--</LinearLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="@string/num1"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+            <!--<view-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/black_border"-->
+            <!--android:layout_marginLeft="22dp"-->
+            <!--android:layout_marginRight="35dp"/>-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="8dp"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:hint="First name"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/clastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last name"
+                    android:fontFamily="@font/gotham_book"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/gotham_book"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/uemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="text"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#0000">-->
+
+            <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:id="@+id/company"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Company"-->
+            <!--android:inputType="text"-->
+            <!--android:textColor="@color/black_border"-->
+            <!--android:textColorHighlight="@color/black_border"-->
+            <!--android:textColorHint="@color/black_border" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:hint="Address"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginTop="10dp"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/stat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:hint="State/Province"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="35dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="#0000">-->
+
+            <!--<android.support.design.widget.TextInputEditText-->
+            <!--android:id="@+id/zip"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Zip Code"-->
+            <!--android:inputType="text"-->
+            <!--android:textColor="@color/black_border"-->
+            <!--android:textColorHighlight="@color/black_border"-->
+            <!--android:textColorHint="@color/black_border" />-->
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/tele"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="TelePhone"
+                    android:inputType="number"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Only Available In pakistan"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="#0000">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/fax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Fax"
+                    android:fontFamily="@font/gotham_book"
+                    android:inputType="text"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="35dp"-->
+                <!--android:layout_marginRight="35dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:padding="2dp"-->
+                <!--android:text="2. SHIPPING METHOD"-->
+                <!--android:textColor="@color/jumbo"-->
+                <!--android:textSize="18sp" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginLeft="35dp"-->
+                <!--android:layout_marginRight="35dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:padding="2dp"-->
+                <!--android:text="Flat Rate-->
+<!--Fixed PKR150"-->
+                <!--android:textColor="@color/jumbo"-->
+                <!--android:textSize="12sp" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="3. PAYMENT METHOD"
+                android:fontFamily="@font/gotham_book"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:padding="2dp"
+                android:text="Cash On Delivery"
+                android:textColor="@color/white"
+                android:fontFamily="@font/gotham_book"
+                android:textSize="12sp" />
+            <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="22dp"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:id="@+id/review"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:text="REVIEW YOUR ORDER"-->
+            <!--android:background="@color/jumbo" />-->
+            <Button
+                android:id="@+id/order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/pink_round"
+                android:text="PLACE ORDER"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail"
+            android:background="@color/transparent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grey_round"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:padding="2dp"
+                    android:text="ORDER ID:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColor="@color/pinknoor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grey_round"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:padding="2dp"
+                    android:text="Total Price:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/total_price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColor="@color/pinknoor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grey_round"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:padding="2dp"
+                    android:text="Shipping Flat Fix Price:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/shipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColor="@color/pinknoor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grey_round"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:padding="2dp"
+                    android:text="Grand Total:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/Grand_Total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColor="@color/pinknoor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:id="@+id/done"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/gotham_book"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/pink_round"
+                android:text="Proceed"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

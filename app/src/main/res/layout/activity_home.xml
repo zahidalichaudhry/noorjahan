@@ -1,0 +1,116 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wood"
+    android:layout_height="match_parent"
+    tools:context="com.itpvt.noorjahan.Activities.Home">
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.itpvt.noorjahan.Activities.Home">
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/new_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center"
+            android:text="NEW ARRIVAL"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/model_recyclerView2"
+            android:layout_width="0dp"
+            android:background="@color/transparent"
+            android:layout_height="450dp"
+            android:orientation="vertical"
+
+            android:layout_marginLeft="5dp"
+            android:scrollbars="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/include3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/model_recyclerView"
+            app:layout_constraintTop_toBottomOf="@+id/new_a2">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/new_a"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Please Wait......."
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_tx" />
+
+        <TextView
+            android:id="@+id/new_a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center"
+            android:text="Please Wait......."
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/model_recyclerView2"
+            app:layout_constraintTop_toBottomOf="@+id/sale_tx" />
+
+        <include
+            android:id="@+id/include3"
+            layout="@layout/footer2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </include>
+
+        <TextView
+            android:id="@+id/sale_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="center"
+            android:text="SALE"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/model_recyclerView2"
+            app:layout_constraintTop_toBottomOf="@+id/slider" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/model_recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="450dp"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/include3"
+            app:layout_constraintEnd_toStartOf="@+id/model_recyclerView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/new_a">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
