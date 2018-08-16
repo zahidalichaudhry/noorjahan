@@ -23,6 +23,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.bumptech.glide.Glide;
 import com.itpvt.noorjahan.Adapters.All_Products_Adapter;
 import com.itpvt.noorjahan.Config;
 import com.itpvt.noorjahan.PojoClass.Products_pojo;
@@ -53,6 +54,15 @@ public class All_Products_Design extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
        Button facebook=(Button)findViewById(R.id.facebook);
        Button instagram=(Button)findViewById(R.id.insta);
+
+        TextView textView=(TextView)findViewById(R.id.textView4) ;
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://noorjahan.pk/index.php/"));
+                startActivity(myIntent);
+            }
+        });
        LinearLayout footer=(LinearLayout)findViewById(R.id.footer);
         footer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,7 +104,7 @@ public class All_Products_Design extends AppCompatActivity {
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri  = Uri.parse("smsto:"+"+923161433343");
+                Uri uri  = Uri.parse("smsto:"+"+923000225587");
                 Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
                 intent.setPackage("com.whatsapp");
                 startActivity(intent);
@@ -112,8 +122,8 @@ public class All_Products_Design extends AppCompatActivity {
         id = intent.getStringExtra("id");
         Title=intent.getStringExtra("title");
 
-        int resId = getResources().getIdentifier(Title, "drawable", getPackageName());
-        title.setBackgroundResource(resId);
+        Glide.with(All_Products_Design.this).load(Title).into(title);
+
         GetAllProducts();
     }
     private void GetAllProducts()

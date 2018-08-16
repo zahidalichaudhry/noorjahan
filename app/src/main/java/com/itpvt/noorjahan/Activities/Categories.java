@@ -2,6 +2,7 @@ package com.itpvt.noorjahan.Activities;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -10,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -57,7 +59,24 @@ public class Categories extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        ImageView whatsapp=(ImageView) findViewById(R.id.whatsapp);
+        whatsapp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri uri  = Uri.parse("smsto:"+"+923000225587");
+                Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
+                intent.setPackage("com.whatsapp");
+                startActivity(intent);
+            }
+        });
+        ImageView bag=(ImageView)findViewById(R.id.bag);
+        bag.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Categories.this,My_Cart.class);
+                startActivity(intent);
+            }
+        });
         recyclerView=(RecyclerView)findViewById(R.id.model_recyclerView);
         layoutManager=new GridLayoutManager(Categories.this,1);
         recyclerView.setLayoutManager(layoutManager);

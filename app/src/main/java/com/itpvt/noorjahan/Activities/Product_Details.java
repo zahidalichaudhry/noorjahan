@@ -85,6 +85,14 @@ LinearLayout spinners;
                 Product_Details.super.onBackPressed();
             }
         });
+        TextView textView=(TextView)findViewById(R.id.textView4) ;
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://noorjahan.pk/index.php/"));
+                startActivity(myIntent);
+            }
+        });
         Button facebook=(Button)findViewById(R.id.facebook);
         Button instagram=(Button)findViewById(R.id.insta);
         LinearLayout footer=(LinearLayout)findViewById(R.id.footer);
@@ -113,7 +121,7 @@ LinearLayout spinners;
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri  = Uri.parse("smsto:"+"+923161433343");
+                Uri uri  = Uri.parse("smsto:"+"+923000225587");
                 Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
                 intent.setPackage("com.whatsapp");
                 startActivity(intent);

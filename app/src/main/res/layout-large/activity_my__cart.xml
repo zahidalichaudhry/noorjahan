@@ -46,8 +46,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="120dp"
-                android:layout_height="40dp"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@drawable/pink_round"
                 android:fontFamily="@font/gotham_book"
@@ -55,12 +55,12 @@
                 android:padding="5dp"
                 android:text="Grand Total:"
                 android:textColor="@color/white"
-                android:textSize="14sp" />
+                android:textSize="22sp" />
 
             <TextView
                 android:id="@+id/g_price"
-                android:layout_width="180dp"
-                android:layout_height="40dp"
+                android:layout_width="190dp"
+                android:layout_height="50dp"
                 android:layout_margin="2dp"
                 android:background="@drawable/grey_round"
                 android:fontFamily="@font/gotham_book"
@@ -72,12 +72,13 @@
 
         <Button
             android:id="@+id/chekout"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
             android:layout_margin="2dp"
             android:background="@drawable/pink_round"
             android:fontFamily="@font/gotham_book"
             android:text="Chek out"
+            android:textSize="22sp"
             android:textColor="@color/white" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/wood"
+    android:background="@drawable/bg"
     tools:context="com.itpvt.noorjahan.Activities.All_Products">
     <include layout="@layout/action_bar">
     </include>
@@ -20,8 +20,9 @@
         android:id="@+id/title"
         android:textColorHint="@color/white"
         android:textColor="@color/white"
-        android:background="@color/pinknoor"
+        android:background="@drawable/pink_round"
         android:gravity="center"
+        android:layout_marginTop="5dp"
         android:fontFamily="@font/gotham_book"
         android:textSize="24sp"
         android:textAllCaps="true"

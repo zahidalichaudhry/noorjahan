@@ -14,16 +14,22 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.itpvt.noorjahan.Config;
 import com.itpvt.noorjahan.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    ImageView newa,lawn;
+    ImageView newa,lawn,chifone,sales,Home;
+    String Sales,Chifone,Newarriaval,Lawn,home;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         //Remove notification bar
@@ -32,12 +38,25 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         newa=(ImageView)findViewById(R.id.newa);
         lawn=(ImageView)findViewById(R.id.lawn);
+        sales=(ImageView)findViewById(R.id.sale);
+        Home=(ImageView)findViewById(R.id.Home);
+        chifone=(ImageView)findViewById(R.id.chifone);
+        Newarriaval= Config.NEWARRIVAL;
+        Lawn=Config.LAWN;
+        Sales=Config.SALE;
+        Chifone=Config.CHIFONE;
+        home=Config.HOME;
+        Glide.with(MainActivity.this).load(Newarriaval).into(newa);
+        Glide.with(MainActivity.this).load(Lawn).into(lawn);
+        Glide.with(MainActivity.this).load(Sales).into(sales);
+        Glide.with(MainActivity.this).load(Chifone).into(chifone);
+        Glide.with(MainActivity.this).load(home).into(Home);
         newa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,All_Products_Design.class);
                 intent.putExtra("id","3");
-                intent.putExtra("title","newa");
+                intent.putExtra("title",Config.NEWARRIVAL);
                 startActivity(intent);
             }
         });
@@ -46,11 +65,68 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,All_Products_Design.class);
                 intent.putExtra("id","10");
-                intent.putExtra("title","lawn");
+                intent.putExtra("title",Config.LAWN);
                 startActivity(intent);
             }
         });
+        Home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,Home.class);
+                startActivity(intent);
+            }
+        });
+        sales.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,All_Products_Design.class);
+                intent.putExtra("id","11");
+                intent.putExtra("title",Config.SALE);
+                startActivity(intent);
 
+            }
+        });
+        chifone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity.this,All_Products_Design.class);
+                intent.putExtra("id","8");
+                intent.putExtra("title",Config.SALE);
+                startActivity(intent);
+            }
+        });
+        Button facebook=(Button)findViewById(R.id.facebook);
+        Button instagram=(Button)findViewById(R.id.insta);
+        TextView textView=(TextView)findViewById(R.id.textView4) ;
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://noorjahan.pk/index.php/"));
+                startActivity(myIntent);
+            }
+        });
+        LinearLayout footer=(LinearLayout)findViewById(R.id.footer);
+        footer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://itpvt.net/"));
+                startActivity(myIntent);
+            }
+        });
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/Noor-Jahan-Collection-740901429357673/"));
+                startActivity(myIntent);
+            }
+        });
+        instagram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/noorjahancollection/"));
+                startActivity(myIntent);
+            }
+        });
 //        setSupportActionBar(toolbar);
 
 //
@@ -132,7 +208,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
         } else if (id == R.id.Whatsapp)
         {
-            Uri uri  = Uri.parse("smsto:"+"+921234567890");
+            Uri uri  = Uri.parse("smsto:"+"+923000225587");
             Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
             intent.setPackage("com.whatsapp");
             startActivity(intent);

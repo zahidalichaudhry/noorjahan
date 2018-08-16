@@ -20,33 +20,35 @@
         <ImageView
             android:id="@+id/Home"
             android:layout_width="0dp"
-            android:layout_height="212dp"
+            android:layout_height="300dp"
+            android:background="@drawable/newa"
             app:layout_constraintBottom_toTopOf="@+id/newa"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/newa"
             android:layout_width="0dp"
-            android:layout_height="212dp"
+            android:layout_height="300dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Home" />
 
-    <ImageView
-        android:id="@+id/lawn"
-        android:layout_width="0dp"
-        android:layout_height="212dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newa" />
+        <ImageView
+            android:id="@+id/lawn"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newa" />
 
         <ImageView
             android:id="@+id/chifone"
             android:layout_width="0dp"
-            android:layout_height="212dp"
+            android:layout_height="300dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +57,7 @@
         <ImageView
             android:id="@+id/sale"
             android:layout_width="0dp"
-            android:layout_height="212dp"
+            android:layout_height="300dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"

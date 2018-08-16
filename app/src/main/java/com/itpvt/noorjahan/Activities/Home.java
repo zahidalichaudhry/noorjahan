@@ -3,9 +3,16 @@ package com.itpvt.noorjahan.Activities;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -36,7 +43,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderClickListener {
+public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderClickListener ,NavigationView.OnNavigationItemSelectedListener {
     SliderLayout sliderLayout ;
     static String path0;
     LinearLayout footer;
@@ -51,12 +58,11 @@ public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderC
     RecyclerView.LayoutManager layoutManager;
     private ProgressDialog loading;
     Button facebook,instagram;
-    String menimage,womenimage,saleimage,bajiImage;
+    String Sales,Chifone,Newarriaval,Lawn;
     static String path1,path2;
     ImageView men,women,sale,New;
     TextView new_a,new_a2,new_tx,sale_tx;
     HashMap<String, String> HashMapForURL ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,20 +70,19 @@ public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderC
         //Remove notification bar
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.home);
 
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         sliderLayout = (SliderLayout) findViewById(R.id.slider);
         path0 = Config.BANNER1;
         path1= Config.BANNER2;
-//        path2=Config.BANNER3;
-        saleimage=Config.HOMW_SALE;
-        bajiImage  = Config.HOME_FOOTWARE;
+        path2=Config.BANNER3;
+        Newarriaval=Config.NEWARRIVAL;
+        Lawn  = Config.LAWN;
         recyclerView=(RecyclerView)findViewById(R.id.model_recyclerView);
         recyclerView2=(RecyclerView)findViewById(R.id.model_recyclerView2);
         new_a=(TextView)findViewById(R.id.new_a);
         new_a2=(TextView)findViewById(R.id.new_a2);
-
         facebook=(Button)findViewById(R.id.facebook);
         instagram=(Button)findViewById(R.id.insta);
 
@@ -108,6 +113,14 @@ public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderC
                 startActivity(myIntent);
             }
         });
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(Home.this);
         AddImagesUrlOnline();
         GetAllProductsnew();
         GetAllProductssale();
@@ -115,6 +128,7 @@ public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderC
 
     private void GetAllProductsnew()
     {
+        loading = ProgressDialog.show(Home.this,"Loading...","Please wait...",false,false);
         StringRequest request = new StringRequest(Request.Method.POST, Config.URL_ALL_PRODUCTS, new com.android.volley.Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -249,6 +263,7 @@ public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderC
 //                        }
                     adapter=new Recycler_Adapter_All_Products_new(arrayList2,Home.this);
                     recyclerView.setAdapter(adapter);
+                    loading.dismiss();
 
 
                 }
@@ -310,7 +325,7 @@ public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderC
 
         HashMapForURL.put(" ", path0);
         HashMapForURL.put("  ", path1);
-//        HashMapForURL.put("  ", path1);
+        HashMapForURL.put("   ", path2);
 
         callSlider();
     }
@@ -337,5 +352,51 @@ public class Home extends AppCompatActivity  implements BaseSliderView.OnSliderC
         sliderLayout.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout.setCustomAnimation(new DescriptionAnimation());
         sliderLayout.setDuration(8000);
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item)
+    {
+        int id = item.getItemId();
+
+        if (id == R.id.Home)
+        {
+            // Handle the camera action
+//        } else if (id == R.id.Store)
+//        {
+//
+            Intent intent = new Intent(Home.this, Home.class);
+            startActivity(intent);
+
+        } else if (id == R.id.Categories) {
+            Intent intent = new Intent(Home.this, Categories.class);
+            startActivity(intent);
+
+        } else if (id == R.id.Cart) {
+
+            Intent intent = new Intent(Home.this, My_Cart.class);
+            finish();
+            startActivity(intent);
+        } else if (id == R.id.Whatsapp)
+        {
+            Uri uri  = Uri.parse("smsto:"+"+923000225587");
+            Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
+            intent.setPackage("com.whatsapp");
+            startActivity(intent);
+
+        } else if (id == R.id.Innovators)
+        {
+            Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://itpvt.net/"));
+            startActivity(myIntent);
+
+        }else if (id == R.id.web) {
+            Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://noorjahan.pk/index.php/"));
+            startActivity(myIntent);
+
+        }
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 }

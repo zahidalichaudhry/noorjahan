@@ -74,7 +74,7 @@ public class Sub_Categories extends AppCompatActivity {
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri= Uri.parse("smsto:"+"+923111101102");
+                Uri uri= Uri.parse("smsto:"+"+923000225587");
                 Intent i =new Intent(Intent.ACTION_SENDTO,uri);
                 i.setPackage("com.whatsapp");
                 startActivity(i);

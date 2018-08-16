@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@drawable/bg"
-    tools:context="com.itpvt.noorjahan.Activities.Sub_Categories">
-    <!-- TODO: Update blank fragment layout -->
+    tools:context="com.itpvt.noorjahan.Activities.All_Products">
     <include layout="@layout/action_bar">
     </include>
     <!--<View-->
@@ -16,15 +16,15 @@
         <!--android:layout_height="1dp"/>-->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="70dp"
         android:id="@+id/title"
-        android:fontFamily="@font/gotham_book"
+        android:textColorHint="@color/white"
         android:textColor="@color/white"
         android:background="@drawable/pink_round"
-        android:textSize="24sp"
         android:gravity="center"
         android:layout_marginTop="5dp"
-        android:textColorHint="@color/white"
+        android:fontFamily="@font/gotham_book"
+        android:textSize="30sp"
         android:textAllCaps="true"
         android:hint="Category"/>
     <!--<View-->
@@ -34,8 +34,12 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/model_recyclerView"
         android:background="@color/transparent"
+        android:id="@+id/model_recyclerView"
+        android:padding="10dp"
+        android:layout_gravity="center"
         android:scrollbars="vertical">
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>
+
+

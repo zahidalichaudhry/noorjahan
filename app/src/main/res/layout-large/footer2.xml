@@ -10,8 +10,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="80dp"
         android:layout_marginLeft="8dp"
         android:fontFamily="@font/gotham_book"
         android:textAllCaps="true"
@@ -34,8 +34,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4">
 
         <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:background="@drawable/logo" />
 
         <TextView
@@ -46,7 +46,7 @@
             android:padding="5dp"
             android:text="Developed By INNOVATORS TECHNOLOGIES."
             android:textColor="@color/black"
-            android:textSize="12sp" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
@@ -56,15 +56,16 @@
         android:background="@drawable/grey_round"
         android:fontFamily="@font/gotham_book"
         android:padding="8dp"
-        android:text="Tel. +92 300 0225 587"
+        android:text="Tel. +92 1234 567 890"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:gravity="center"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:text="Tel. +92 1234 567 890" />
 
     <TextView
         android:id="@+id/textView4"
@@ -77,15 +78,15 @@
         android:text="Visit Website for more Details"
         android:drawableRight="@drawable/internet"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <Button
         android:id="@+id/facebook"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_margin="5dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
@@ -97,8 +98,8 @@
 
     <Button
         android:id="@+id/insta"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_margin="5dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="24dp"

@@ -11,6 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.itpvt.noorjahan.Activities.Product_Details;
 import com.itpvt.noorjahan.PojoClass.All_product_pojo;
 import com.itpvt.noorjahan.R;
 import java.util.ArrayList;
@@ -46,19 +47,19 @@ public class Recycler_Adapter_All_Products_new extends RecyclerView.Adapter<Recy
         holder.imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(activity, Product_Details.class);
-//                intent.putExtra("product_id",arrayList.get(position).getProduct_id());
-//                intent.putExtra("SKU",arrayList.get(position).getSKU());
-//                activity.startActivity(intent);
+                Intent intent = new Intent(activity, Product_Details.class);
+                intent.putExtra("product_id",arrayList.get(position).getProduct_id());
+                intent.putExtra("SKU",arrayList.get(position).getSKU());
+                activity.startActivity(intent);
             }
         });
         holder.name.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(activity, Product_Details.class);
-//                intent.putExtra("product_id",arrayList.get(position).getProduct_id());
-//                intent.putExtra("SKU",arrayList.get(position).getSKU());
-//                activity.startActivity(intent);
+                Intent intent = new Intent(activity, Product_Details.class);
+                intent.putExtra("product_id",arrayList.get(position).getProduct_id());
+                intent.putExtra("SKU",arrayList.get(position).getSKU());
+                activity.startActivity(intent);
 
 //
             }

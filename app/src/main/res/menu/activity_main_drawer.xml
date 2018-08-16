@@ -7,6 +7,7 @@
         <item
             android:id="@+id/Home"
             android:icon="@drawable/home"
+            android:fontFamily="@font/gotham_book"
             android:title="Home" />
 
         <!--<item-->
@@ -16,13 +17,16 @@
         <item
             android:id="@+id/Categories"
             android:icon="@drawable/categories"
+            android:fontFamily="@font/gotham_book"
             android:title="Categories" />
         <item
             android:id="@+id/Cart"
+            android:fontFamily="@font/gotham_book"
             android:icon="@drawable/cart2"
             android:title="My Cart" />
         <item
             android:id="@+id/web"
+            android:fontFamily="@font/gotham_book"
             android:icon="@drawable/web"
             android:title="WebSite" />
     </group>
@@ -32,11 +36,13 @@
             <item
                 android:id="@+id/Whatsapp"
                 android:icon="@drawable/whatsapp"
+                android:fontFamily="@font/gotham_book"
                 android:title="Whatsapp" />
 
             <item
                 android:id="@+id/Innovators"
                 android:icon="@drawable/logo"
+                android:fontFamily="@font/gotham_book"
                 android:title="INNOVATORS" />
         </menu>
     </item>

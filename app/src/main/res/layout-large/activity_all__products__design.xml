@@ -23,7 +23,7 @@
             android:orientation="vertical">
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="214dp"
+                android:layout_height="320dp"
                 android:id="@+id/title"
                 android:gravity="center"
                 android:textSize="24sp"

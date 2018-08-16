@@ -55,7 +55,7 @@
                 android:padding="2dp"
                 android:text="@string/num1"
                 android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textSize="26sp" />
             <!--<view-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="1dp"-->
@@ -77,6 +77,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gotham_book"
                     android:hint="First name"
+                    android:textSize="22sp"
                     android:inputType="text"
                     android:textColor="@color/white"
                     android:textColorHighlight="@color/white"
@@ -99,6 +100,7 @@
                     android:hint="Last name"
                     android:fontFamily="@font/gotham_book"
                     android:inputType="text"
+                    android:textSize="22sp"
                     android:textColor="@color/white"
                     android:textColorHighlight="@color/white"
                     android:textColorHint="@color/white" />
@@ -118,7 +120,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email"
-                    android:inputType="text"
+                    android:inputType="textEmailAddress"
+                    android:textSize="22sp"
                     android:fontFamily="@font/gotham_book"
                     android:textColor="@color/white"
                     android:textColorHighlight="@color/white"
@@ -160,6 +163,7 @@
                     android:fontFamily="@font/gotham_book"
                     android:hint="Address"
                     android:inputType="text"
+                    android:textSize="22sp"
                     android:textColor="@color/white"
                     android:textColorHighlight="@color/white"
                     android:textColorHint="@color/white" />
@@ -180,6 +184,7 @@
                     android:layout_height="wrap_content"
                     android:hint="City"
                     android:inputType="text"
+                    android:textSize="22sp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/gotham_book"
                     android:textColorHighlight="@color/white"
@@ -202,6 +207,7 @@
                     android:fontFamily="@font/gotham_book"
                     android:hint="State/Province"
                     android:inputType="text"
+                    android:textSize="22sp"
                     android:textColor="@color/white"
                     android:textColorHighlight="@color/white"
                     android:textColorHint="@color/white" />
@@ -240,6 +246,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="TelePhone"
+                    android:textSize="22sp"
                     android:inputType="number"
                     android:fontFamily="@font/gotham_book"
                     android:textColor="@color/white"
@@ -262,6 +269,7 @@
                     android:layout_height="wrap_content"
                     android:text="Only Available In pakistan"
                     android:inputType="text"
+                    android:textSize="22sp"
                     android:textColor="@color/white"
                     android:fontFamily="@font/gotham_book"
                     android:textColorHighlight="@color/white"
@@ -282,6 +290,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Fax"
+                    android:textSize="22sp"
                     android:fontFamily="@font/gotham_book"
                     android:inputType="text"
                     android:textColor="@color/white"
@@ -319,10 +328,10 @@
                 android:layout_marginRight="35dp"
                 android:layout_marginTop="10dp"
                 android:padding="2dp"
+                android:textSize="22sp"
                 android:text="3. PAYMENT METHOD"
                 android:fontFamily="@font/gotham_book"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
+                android:textColor="@color/white" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -332,9 +341,9 @@
                 android:layout_marginTop="10dp"
                 android:padding="2dp"
                 android:text="Cash On Delivery"
+                android:textSize="22sp"
                 android:textColor="@color/white"
-                android:fontFamily="@font/gotham_book"
-                android:textSize="12sp" />
+                android:fontFamily="@font/gotham_book" />
             <!--<Button-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="wrap_content"-->
@@ -353,6 +362,8 @@
                 android:fontFamily="@font/gotham_book"
                 android:layout_marginRight="35dp"
                 android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:textSize="22sp"
                 android:background="@drawable/pink_round"
                 android:text="PLACE ORDER"
                 android:textColor="@color/white" />
@@ -370,6 +381,7 @@
                 android:layout_marginLeft="35dp"
                 android:layout_marginRight="35dp"
                 android:layout_marginTop="10dp"
+
                 android:background="@drawable/grey_round"
                 android:orientation="horizontal"
                 android:padding="6dp">
@@ -381,7 +393,7 @@
                     android:padding="2dp"
                     android:text="ORDER ID:"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="22sp"/>
 
                 <TextView
                     android:id="@+id/code"
@@ -389,7 +401,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gotham_book"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -409,7 +421,7 @@
                     android:padding="2dp"
                     android:text="Total Price:"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/total_price1"
@@ -417,7 +429,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gotham_book"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -437,7 +449,7 @@
                     android:padding="2dp"
                     android:text="Shipping Flat Fix Price:"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/shipping"
@@ -445,7 +457,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gotham_book"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="22sp"/>
             </LinearLayout>
 
             <LinearLayout
@@ -465,7 +477,7 @@
                     android:padding="2dp"
                     android:text="Grand Total:"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="22sp" />
 
                 <TextView
                     android:id="@+id/Grand_Total"
@@ -485,6 +497,7 @@
                 android:layout_marginLeft="35dp"
                 android:background="@drawable/pink_round"
                 android:text="Proceed"
+                android:textSize="22sp"
                 android:textColor="@color/white"
                 android:layout_height="wrap_content"
                 />

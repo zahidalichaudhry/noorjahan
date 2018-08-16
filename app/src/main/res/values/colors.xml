@@ -3,7 +3,7 @@
     <color name="colorPrimary">#ffffff</color>
     <color name="colorPrimaryDark">#c01b1919</color>
     <color name="colorAccent">#f9f9fb</color>
-    <color name="pinknoor">#c97379</color>
+    <color name="pinknoor">#e2d49e5c</color>
 
 
 
@@ -12,6 +12,7 @@
     <color name="lightGray">#fcfbfb</color>
     <color name="tranpblack">#b5000000</color>
     <color name="tranpblackdk">#a4000000</color>
+    <color name="tranpblackdkr">#bf000000</color>
     <color name="nocolor">#00ffffff</color>
     <color name="colorwhite">#ffff</color>
     <color name="greytrans">#bd363535</color>
@@ -24,8 +25,8 @@
     <color name="aluminum">#999999</color>
     <color name="base">#b9b9b9</color>
     <color name="iron">#cccccc</color>
-    <color name="greyshade">#DFDFDF</color>
-    <color name="transparent">#7b000000</color>
+    <color name="greyshade">#d6dfdfdf</color>
+    <color name="transparent">#35000000</color>
     <color name="default_green">#aed60d</color>
     <color name="backgroundcolor">#efefef</color>
     <color name="warning">#FFCC00</color>
@@ -42,4 +43,6 @@
     <color name="red">#e60935</color>
     <color name="brow_j">#b5a053</color>
     <color name="Mohagni_back">#4c4c4c</color>
+    <color name="grey_trans">#92555555</color>
+
 </resources>

@@ -72,7 +72,7 @@ public class All_Products extends AppCompatActivity {
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri  = Uri.parse("smsto:"+"+923161433343");
+                Uri uri  = Uri.parse("smsto:"+"+923000225587");
                 Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
                 intent.setPackage("com.whatsapp");
                 startActivity(intent);

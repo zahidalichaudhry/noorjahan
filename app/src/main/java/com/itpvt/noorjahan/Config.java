@@ -7,12 +7,15 @@ package com.itpvt.noorjahan;
 public class Config {
 
     public static final String ip="192.168.100.10";
-    public static final String BANNER1 = "http://jacquard.pk/media/wysiwyg/mobile/Banner_1.jpg";
-    public static final String BANNER2 = "http://jacquard.pk/media/wysiwyg/mobile/Banner_2.jpg";
-   // public static final String BANNER3 = "http://www.forecast.com.pk/media/wysiwyg/porto/mobile/banner2.jpg";
+    public static final String BANNER1 = "http://noorjahan.pk/media/wysiwyg/mobile/banner1.jpg";
+    public static final String BANNER2 = "http://noorjahan.pk/media/wysiwyg/mobile/banner2.jpg";
+    public static final String BANNER3 = "http://noorjahan.pk/media/wysiwyg/mobile/banner3.jpg";
 //    public static final String URL_sub_categories= "http://forecast.com.pk/getSubCategories.php";
-    public static final String HOME_FOOTWARE = "http://noorjahan.pk/media/wysiwyg/mobile/emroidered.png";
-    public static final String HOMW_SALE = "http://noorjahan.pk/media/wysiwyg/mobile/printed.png";
+    public static final String LAWN = "http://noorjahan.pk/media/wysiwyg/mobile/lawn.jpg";
+    public static final String NEWARRIVAL = "http://noorjahan.pk/media/wysiwyg/mobile/new.jpg";
+    public static final String CHIFONE = "http://noorjahan.pk/media/wysiwyg/mobile/chifone.jpg";
+    public static final String HOME = "http://noorjahan.pk/media/wysiwyg/mobile/home.jpg";
+    public static final String SALE = "http://noorjahan.pk/media/wysiwyg/mobile/sale.jpg";
 
 ///////////////////SHARED PREFRENCE CART////////////////////////
 //    public static final String LOGIN_SUCCESS = "success";

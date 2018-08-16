@@ -7,14 +7,14 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="80dp"
         app:layout_scrollFlags="scroll|enterAlways"
         app:theme="@style/ToolbarStyle"
         android:background="@color/tranpblackdkr">
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
         <ImageView
-            android:layout_width="130dp"
+            android:layout_width="160dp"
             android:layout_height="match_parent"
             android:layout_gravity="left"
             android:background="@drawable/logowhite">
@@ -23,15 +23,15 @@
 
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
             android:id="@+id/whatsapp"
             android:background="@drawable/whatsapp"/>
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
             android:id="@+id/bag"
